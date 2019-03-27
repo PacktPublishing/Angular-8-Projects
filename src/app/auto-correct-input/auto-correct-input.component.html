@@ -1,0 +1,7 @@
+<div class="auto-correct-input-wrapper">
+  <input class="auto-correct-input"
+         type="text"
+         [(ngModel)]="inputText"
+         placeholder="{{placeholderText}}"
+         (input)="onTextChange($event.target.value)">
+</div>

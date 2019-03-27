@@ -1,0 +1,23 @@
+$color-input-border: #b0b0b0;
+
+.auto-correct-input-wrapper {
+  display: inline-block;
+  background-color: white;
+
+  .auto-correct-input {
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid $color-input-border;
+    border-radius: 5px;
+    min-width: 400px;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: transparent;
+    text-align: center;
+
+    &:focus {
+      background-color: transparent;
+      border-color: steelblue;
+    }
+  }
+}
