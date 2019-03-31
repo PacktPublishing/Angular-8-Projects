@@ -1,9 +1,13 @@
 <div class="tag-input-wrapper">
-  <input type="text" class="tag-input" placeholder="{{hint}}">
+  <input type="text"
+         class="tag-input"
+         placeholder="{{hint}}"
+         [(ngModel)]="inputText"
+         (keyup)="onKey($event)">
   <ul class="tags">
-    <li *ngFor="let tag of tags" class="tag">
+    <li *ngFor="let tag of tags; let i = index" class="tag">
       {{tag}}
-      <span class="btn-close">x</span>
+      <span class="btn-close" (click)="onDelete(i)">x</span>
     </li>
   </ul>
 </div>
