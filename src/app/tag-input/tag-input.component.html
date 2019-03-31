@@ -1,0 +1,9 @@
+<div class="tag-input-wrapper">
+  <input type="text" class="tag-input" placeholder="{{hint}}">
+  <ul class="tags">
+    <li *ngFor="let tag of tags" class="tag">
+      {{tag}}
+      <span class="btn-close">x</span>
+    </li>
+  </ul>
+</div>
