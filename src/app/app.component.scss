@@ -1,0 +1,22 @@
+$color-hint-text: #676767;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: sans-serif;
+
+  .inner-wrapper {
+    .title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    .hint-text {
+      font-size: 18px;
+      color: $color-hint-text;
+    }
+  }
+}
