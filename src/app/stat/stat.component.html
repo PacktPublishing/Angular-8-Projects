@@ -1,0 +1,16 @@
+<div class="budget-stat">
+  <h5 class="label">
+    Budget for {{from}} to {{to}}
+    <span class="legends">
+        <i class="square green"></i>
+        Remaining
+      </span>
+  </h5>
+  <div class="bar green">
+    <p class="progress yellow" [style.width]="progressWidth"></p>
+  </div>
+  <div class="info">
+    <span class="total">Total {{currency}} {{totalAmount}}</span>
+    <span class="remaining">Remaining {{currency}} {{totalAmount - spentAmount}}</span>
+  </div>
+</div>

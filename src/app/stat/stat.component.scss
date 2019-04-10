@@ -1,0 +1,59 @@
+$borderColor: #DDDDDD;
+$lightgrey: $borderColor;
+$baseGutter: 15px;
+$green: #66AA3E;
+$yellow: #FFC408;
+$red: #E94B35;
+
+.budget-stat {
+  border: 1px solid $borderColor;
+  border-radius: 3px;
+  padding: $baseGutter;
+
+  .green {
+    background-color: $green;
+  }
+
+  .yellow {
+    background-color: $yellow;
+  }
+
+  .red {
+    background-color: $red;
+  }
+
+  .label {
+    font-weight: normal;
+    margin-top: 0;
+    display: flex;
+
+    .legends {
+      margin-left: auto;
+    }
+
+    .square {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .bar {
+    width: 100%;
+    height: $baseGutter;
+
+    .progress {
+      height: 100%;
+    }
+  }
+
+  .info {
+    font-size: 12px;
+    margin-top: 10px;
+    display: flex;
+  }
+
+  .total {
+    margin-right: auto;
+  }
+}
