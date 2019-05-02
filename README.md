@@ -1,6 +1,16 @@
-# LearnAngularByExample
+# Angular 8 Projects
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+
+## How the Code is Organized
+
+For every chapter of a specific section, there's a branch where you can find
+the related code. That way it's easier to find the relevant code at any point
+of time without following any complex folder structure.
+
+Example - `git checkout 2.2` will take you to the relevant code for Section 2.2
+
+To check all the available branches, do - `git branch`
 
 ## Development server
 
